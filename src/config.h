@@ -43,14 +43,14 @@
 #define S_CALLSIGN_ID   11
 
 // Destination callsign: APRS (with SSID=0) is usually okay.
-#define D_CALLSIGN      "APRS"
+#define D_CALLSIGN      "APTCYN"
 #define D_CALLSIGN_ID   0
 
 // Digipeating paths:
 // (read more about digipeating paths here: http://wa8lmf.net/DigiPaths/ )
 // The recommended digi path for a balloon is WIDE2-1 or pathless. The default
 // is pathless. Uncomment the following two lines for WIDE2-1 path:
-#define DIGI_PATH1      "WIDE2-1"
+#define DIGI_PATH1      "WIDE2"
 #define DIGI_PATH1_TTL  1
 
 // APRS comment: this goes in the comment portion of the APRS message. You
@@ -165,7 +165,7 @@
 
 // Type of buzzer (0=active, 1=passive). An active buzzer is driven by a
 // DC voltage. A passive buzzer needs a PWM signal.
-#define BUZZER_TYPE             0
+#define BUZZER_TYPE             1
 
 // When using a passive buzzer, specify the PWM frequency here. Choose one
 // that maximizes the volume according to the buzzer's datasheet. Not all
@@ -214,8 +214,8 @@
 // 3. When flashing the firmware, disconnect the GPS from the RX pin or you
 //    will get errors.
 
-// #define DEBUG_GPS    // GPS sentence dump and checksum validation
-// #define DEBUG_AX25   // AX.25 frame dump
+#define DEBUG_GPS    // GPS sentence dump and checksum validation
+#define DEBUG_AX25   // AX.25 frame dump
 // #define DEBUG_MODEM  // Modem ISR overrun and profiling
 // #define DEBUG_AFSK   // AFSK (modulation) output
 // #define DEBUG_RESET  // AVR reset
