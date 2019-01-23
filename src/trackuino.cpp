@@ -134,7 +134,7 @@ void loop()
     get_pos();
     aprs_send();
     next_aprs += APRS_PERIOD * 1000L;
-    while (afsk_flush()) {
+    while (afsk_fldush()) {
       power_save();
     }
 
